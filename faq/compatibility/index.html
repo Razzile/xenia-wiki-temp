@@ -13,7 +13,7 @@
     
     
       
-        <title>Game Hacks, Mods, etc. - Xenia Wiki</title>
+        <title>Compatibility - Xenia Wiki</title>
       
     
     
@@ -65,11 +65,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#game-hacks-mods-etc" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Game Hacks, Mods, etc.
+              Compatibility
             
           </span>
         </div>
@@ -1498,63 +1493,58 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ultrawide-219-329-etc" class="md-nav__link">
-    Ultrawide (21:9, 32:9, etc)
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/xenia-project/wiki.git/edit/master/docs/faq/hacks_and_mods.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/xenia-project/wiki.git/edit/master/docs/faq/compatibility.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="game-hacks-mods-etc">Game Hacks, Mods, etc.</h1>
-<h2 id="ultrawide-219-329-etc">Ultrawide (21:9, 32:9, etc)</h2>
-<p><strong>THIS WILL NOT INCREASE RESOLUTION</strong></p>
-<p>Ultrawide (21:9, 32:9, etc) hacks are possible. This <a href="https://forums.rpcs3.net/thread-199065.html">guide</a> is for rpcs3, but is applicable to Xenia.</p>
-<p>Some games like Halo 3 have a more convenient method that doesn't require Cheat Engine (recommended to backup default.xex):</p>
-<ol>
-<li>
-<p>Decrypt and decompress default.xex with xextool (game must be extracted first)</p>
-</li>
-<li>
-<p>Replace all <code>3F E3 8E 39</code> in default.xex with the <a href="http://www.wsgf.org/article/common-hex-values">desired aspect ratio (Formatted Value)</a> in reverse order using a hex editor. For example, <code>39 8E 63 40</code> (32:9) would become <code>40 63 8E 39</code>*</p>
-</li>
-</ol>
-<p><em>This won't work for all games. The Cheat Engine method has higher compatibility.</em></p>
+  <h1>Compatibility</h1>
+
+<p>
+<div class="progress progress-1plus">
+<div class="progress-bar" style="width:1.92%">
+<p class="progress-label"><a href="https://github.com/xenia-project/game-compatibility/labels?q=wontfix">Unsupported</a> / <a href="https://github.com/xenia-project/game-compatibility/labels/xam-live-signin-required">Requires Xbox Live</a></p>
+</div>
+</div>
+</p>
+<!--- state-crash-xna-WONTFIX xam-live-signin-required --->
+<p>
+<div class="progress progress-5plus">
+<div class="progress-bar" style="width:5.03%">
+<p class="progress-label"><a href="https://github.com/xenia-project/game-compatibility/labels/state-nothing">Nothing</a> / <a href="https://github.com/xenia-project/game-compatibility/labels?q=crash">Crashes Before Starting</a></p>
+</div>
+</div>
+</p>
+<!--- state-crash-host state-crash-guest state-nothing state-hang --->
+<p>
+<div class="progress progress-15plus">
+<div class="progress-bar" style="width:15.62%">
+<p class="progress-label"><a href="https://github.com/xenia-project/game-compatibility/labels/state-intro">Plays Intros</a> / <a href="https://github.com/xenia-project/game-compatibility/labels/state-load">Initial Loading Screen</a>/ <a href="https://github.com/xenia-project/game-compatibility/labels/state-load">Title Screen</a> / <a href="https://github.com/xenia-project/game-compatibility/labels/state-menus">Menus Open</a></p>
+</div>
+</div>
+</p>
+<!--- state-intro state-load state-title state-menus --->
+<p>
+<div class="progress progress-61plus">
+<div class="progress-bar" style="width:61.95%">
+<p class="progress-label"><a href="https://github.com/xenia-project/game-compatibility/labels/state-gameplay">Gets In-Game</a></p>
+</div>
+</div>
+</p>
+<!--- state-gameplay --->
+<p>
+<div class="progress progress-17plus">
+<div class="progress-bar" style="width:17.65%">
+<p class="progress-label"><a href="https://github.com/xenia-project/game-compatibility/labels/state-playable">Fully Playable</a></p>
+</div>
+</div>
+</p>
+<!--- state-playable --->
 
               
             </article>
